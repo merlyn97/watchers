@@ -1,0 +1,22 @@
+.sidebar {
+    width: 5%;
+    height: 100vh;
+    
+}
+.content {
+    width: 100%;
+}
+
+.main{
+    display: flex;  
+    flex-wrap: wrap;
+    background: #ededed;
+    height: 90vh;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+}
