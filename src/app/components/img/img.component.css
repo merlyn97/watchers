@@ -1,0 +1,22 @@
+
+
+.img-box{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 51%;
+    -webkit-border-radius: 51%;
+    border-radius: 51%;
+    background: #f24255;
+    -webkit-box-shadow: -1px 1px 10px 0px rgba(242,66,85,1);
+    -moz-box-shadow: -1px 1px 10px 0px rgba(242,66,85,1);
+    box-shadow: -1px 1px 10px 0px rgba(242,66,85,1);
+}
+
+ .img-box img{
+    padding: 3px 3px;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
