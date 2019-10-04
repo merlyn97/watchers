@@ -8,12 +8,12 @@ import { Patient } from '../../models/patients.interface';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent implements OnInit {
+  @Input() patient: Patient;
+  
+  lat = 51.678418;
+  lng = 7.809007;
 
-  @Input() patient:Patient;
-  
   constructor(public activeModal: NgbActiveModal) {}
-  
   ngOnInit() {
   }
-
 }

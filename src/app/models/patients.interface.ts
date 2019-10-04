@@ -3,4 +3,6 @@ export interface Patient{
     name: string;
     telefono:string;
     picture:string;
+    latitud: number;
+    longitud: number;
 }
