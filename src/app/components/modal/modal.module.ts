@@ -11,7 +11,7 @@ import { AgmCoreModule } from '@agm/core';
     CommonModule, BoxModule, 
     ImgModule, 
     AgmCoreModule.forRoot({
-      apiKey: ''
+      apiKey: 'AIzaSyCODGCkk998Ej7WCuo4QJNVQ9dpqizXriQ'
     })
   ],
   exports: [ModalComponent],

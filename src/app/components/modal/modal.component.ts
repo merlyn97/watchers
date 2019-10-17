@@ -10,9 +10,6 @@ import { Patient } from '../../models/patients.interface';
 export class ModalComponent implements OnInit {
   @Input() patient: Patient;
   
-  lat = 51.678418;
-  lng = 7.809007;
-
   constructor(public activeModal: NgbActiveModal) {}
   ngOnInit() {
   }
