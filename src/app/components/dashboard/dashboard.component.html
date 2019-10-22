@@ -4,8 +4,9 @@
         <app-menu-bar></app-menu-bar>
         <div class="main">
             <div class="box" *ngFor="let patient of arrPatients">
-            <app-box (click)="open(patient)" [patient]="patient"></app-box>   
+                <app-box (click)="open(patient)" [patient]="patient"></app-box>
             </div>
         </div>
     </main>
+
 </div>

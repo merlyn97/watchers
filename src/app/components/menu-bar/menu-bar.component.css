@@ -1,7 +1,7 @@
 .menu {
     width: 100%;
     height: 56px;
-    background: #ffffff;
+    background: #FFF;
 }
 
 .menu img{
@@ -14,5 +14,4 @@
 nav{
     display: flex;
     justify-content: end;
-    
 }

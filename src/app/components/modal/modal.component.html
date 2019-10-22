@@ -1,20 +1,23 @@
 <div class="modal-header">
+
   <div class="map">
-      <img src="../../../assets/Captura de pantalla 2019-08-14 a la(s) 0.18.33@3x.png" alt="">
-   
+    <agm-map [latitude]="patient.latitud" [longitude]="patient.longitud">
+      <agm-marker [latitude]="patient.latitud" [longitude]="patient.longitud"></agm-marker>
+    </agm-map>
   </div>
+
   <div class="box">
     <app-img [patient]="patient.picture"></app-img>
-  <div class="info">
-    <div class="in">
+    <div class="info">
+      <div class="in">
         {{patient.id}}
-    </div>
-    <div class="in">
+      </div>
+      <div class="in">
         {{patient.name}}
+      </div>
+      <div class="in">
+        {{patient.telefono}}
+      </div>
     </div>
-    <div class="in">
-        {{patient.telefono}}  
-    </div>
   </div>
-  </div>
-  </div>
+</div>
