@@ -15,9 +15,16 @@
         <img src="../../../assets/login/user-solid.png" id="logo-user">
         <br>
         <form>
-            <mat-form-field>
-                <input type="text" matInput placeholder="Email" id="email" required>
+            <mat-form-field> <!--validación para el email-->
+                <input matInput placeholder="Email" [formControl]="emailFormControl">
+                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                    Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="emailFormControl.hasError('required')">
+                    Email is <strong>required</strong>
+                </mat-error>
             </mat-form-field>
+
             <mat-form-field>
                 <input type="password" matInput placeholder="Password" id="pass" required>
             </mat-form-field>
@@ -29,4 +36,3 @@
         </form>
     </div>
 </div>
-
